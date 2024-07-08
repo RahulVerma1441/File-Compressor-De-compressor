@@ -1,0 +1,83 @@
+<!--                                  Rahul Verma                                          -->
+
+<!--                                 index.html file                                      -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>File Compressor De-compressor</title>
+    <link rel="shortcut icon" href="gifs/favicon.ico">
+    <meta name="title" content="File Compressor De-compressor">
+    <meta name="description" content="An online .txt file compressor, de-compressor tool which uses Huffman Coding for Lossless data compression.">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <header class="myheader">
+        <div class="container">
+            <h1 class="display-4">File Compressor De-compressor</h1>
+            <p>Compress or De-compress .txt files in just 2 steps!</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section class="mb-5">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Step 1: Upload Your File</h2>
+                    <p>(.txt Files Only)</p>
+                </div>
+                <div class="card-body" id="step1">
+                    <img height="50" width="50" src="gifs/upload.gif" alt="Upload" loading="lazy">
+                    <form method="post" enctype="multipart/form-data" class="form mt-3" id="fileform">
+                        <input class="file-input-button form-control" type="file" id="uploadfile">
+                        <input class="upload-button btn btn-primary mt-3" type="button" id="submitbtn" value="Upload ⤒">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Step 2: Select Action</h2>
+                </div>
+                <div class="card-body" id="step2">
+                    <img height="60" width="60" src="gifs/action.gif" alt="action" loading="lazy">
+                    <div class="mt-3">
+                        <button type="button" id="encode" class="btn btn-success me-2">Compress ⭳</button>
+                        <button type="button" id="decode" class="btn btn-danger">De-compress ⭳</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="card">
+                <div class="card-header">
+                    <h2>Sit Back and Relax</h2>
+                </div>
+                <div class="card-body" id="step3">
+                    <img height="60" width="60" src="gifs/emoji.gif" alt="emoji" loading="lazy">
+                    <div class="mt-3">
+                        <button class="reload-button" type="button" onclick="location.reload()">Reload to Start Again!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="my-footer">
+        <p>&copy; 2024 File Compressor De-compressor</p>
+    </footer>
+
+</body>
+
+</html>
